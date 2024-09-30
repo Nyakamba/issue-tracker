@@ -10,6 +10,7 @@ const statusMap: Record<
   IN_PROGRESS: { label: "In Progress", color: "violet" },
   CLOSED: { label: "Closed", color: "green" },
 };
+
 const IssueStatusBadge = ({ status }: { status: Status }) => {
   return (
     <Badge color={statusMap[status].color}>{statusMap[status].label}</Badge>
