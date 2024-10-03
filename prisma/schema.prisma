@@ -9,6 +9,7 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+<<<<<<< HEAD
 
 model Issue {
   id               Int      @id @default(autoincrement())
@@ -78,3 +79,5 @@ model VerificationToken {
   @@unique([identifier, token])
   @@map("verification_tokens")
 }
+=======
+>>>>>>> 878f823 (Set up prisma)
